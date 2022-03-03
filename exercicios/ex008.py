@@ -1,0 +1,2 @@
+me = float(input('Digite uma distância em metros: '))
+print('Você digitou {} metros que em: \ndecâmetro equivale a {} dam; \nhectômetro equivale a {} hm; \nquilômtro equivale a {} km; \ndecímetro equivale a {} dm; \ncentímetro equivale a {} cm; \nmilímetro equivale a {} mm;'.format(me, me * 10, me * 100, me * 1000, me / 10, me / 100, me / 1000))
