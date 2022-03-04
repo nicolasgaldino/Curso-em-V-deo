@@ -10,9 +10,13 @@ mai = nome.upper()
 min = nome.lower()
 spc = nome.replace(' ', '')
 qua = len(spc)
+a1 = nome.split()
+a2 = a1[0]
+a3 = len(a2)
 print('''
 Olá, {}! 
 Seu nome com todas as letras maiúculas fica: {};
 Seu nome com todas a letras minúsculas fica: {};
 Seu nome tem {} letras;
-'''.format(nome, mai, min, qua))
+Seu primeiro nome tem {} letras;
+'''.format(nome, mai, min, qua, a3))
