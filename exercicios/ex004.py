@@ -1,9 +1,11 @@
-val = input('Digite algo: ')
-print('O tipo primitivo deste valor é: {}'.format(type(val)))
-print('Só tem espaços? {}'.format(val.isspace()))
-print('É um número? {}'.format(val.isnumeric()))
-print('Tem apenas caracteres alfabéticos? {}'.format(val.isalpha()))
-print('Tem apenas caracteres alfanuméricos? {}'.format(val.isalnum()))
-print('Está em maiúsculas? {}'.format(val.isupper()))
-print('Está em minúsculas? {}'.format(val.islower()))
-print('Está capitalizada? {}'.format(val.istitle()))
+val = input('Digite algo: ').strip()
+print('''
+O tipo primitivo deste valor é: {};
+Só tem espaços? {};
+É um número? {};
+Tem apenas caracteres alfabéticos? {};
+Tem apenas caracteres alfanuméricos? {};
+Está em maiúsculas? {};
+Está em minúsculas? {};
+Está capitalizada? {};
+'''.format(type(val), val.isspace(), val.isnumeric(), val.isalpha(), val.isalnum(), val.isupper(), val.islower(), val.istitle()))

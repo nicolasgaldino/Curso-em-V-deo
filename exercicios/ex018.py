@@ -1,6 +1,7 @@
-'''Faça um programa que leia um ângulo qualquer e mostre
+'''
+Faça um programa que leia um ângulo qualquer e mostre
 na tela o valor do seno, cosseno e tentagente desse ângulo.#
---------------------------------------------------------------'''
+'''
 from math import sqrt
 a = float(input('Digite o valor do cateto oposto: '))
 b = float(input('Digite o valor do cateto adjacente: '))
@@ -11,7 +12,16 @@ tot = sqrt(c)
 sen = a / (sqrt(c))
 cos = b / (sqrt(c))
 tag = a / b
-print('Com os valores digitados temos: \nCateto oposto sendo: {} \nCateto adjacente sendo: {} \nTemos a hipotenusa: {:.3f} \nCom esse valores chegamos aos seguintes resultados: \nSeno: {:.3f} \nCosseno: {:.3f} \nTangente: {:.3f}'.format(a, b, tot, sen, cos, tag))
+print('''
+Com os valores digitados temos:
+Cateto oposto sendo: {};
+Cateto adjacente sendo: {};
+Temos a hipotenusa: {:.3f};
+Com esse valores chegamos aos seguintes resultados:
+Seno: {:.3f};
+Cosseno: {:.3f};
+Tangente: {:.3f}
+'''.format(a, b, tot, sen, cos, tag))
 '''--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 import math 
 ang = float(input('Digite o ângulo desejado: '))
