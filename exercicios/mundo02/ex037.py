@@ -12,11 +12,13 @@ Digite uma opção para a conversão do valor {}.
 3 - Hexadecimal;
 '''.format(num))).strip()
 if opcao == '1':
-    binario = bin(num)
+    binario = format(num, 'b')
     print('{} em Binário, fica: {}'.format(num, binario))
 elif opcao == '2':
-    octal = oct(num)
+    octal = format(num, 'o')
     print('{} em Octal, fica: {}'.format(num, octal))
 elif opcao == '3':
-    hexadecimal = hex(num)
+    hexadecimal = format(num, 'x')
     print('{} em Hexadecimal, fica: {}'.format(num, hexadecimal))
+else:
+    print('Opção inválida, tente novamente.')

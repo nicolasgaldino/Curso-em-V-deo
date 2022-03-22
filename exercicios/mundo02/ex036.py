@@ -11,9 +11,7 @@ anos = int(input('Pretende pagar a casa por quantos anos? '))
 meses = 12 * anos
 parcelas = valor / meses
 porcentSalario = salario * (30 / 100)
-juros = porcentSalario + salario
-print('{:.2f}, {:.2f}, {:.2f}'.format(parcelas, porcentSalario, juros))
-if parcelas >= juros:
+if parcelas >= porcentSalario:
     print('''
     Com sua renda mensal atual, o financiamento não pôde ser aprovado.
     As parcelas irão exceder 30% do seu salário.
