@@ -4,7 +4,7 @@ de um atleta e mostre sua categoria, de acordo com a idade:
 - Até 9 anos: MIRIM
 - Até 14 ano: INFANTIL
 - Até 19 anos: JÚNIOR
-- Até 20 anos: SÊNIOR
+- Até 25 anos: SÊNIOR
 - Acima: MASTER'''
 from datetime import datetime
 sysdata = datetime.now()
@@ -17,7 +17,7 @@ elif idade <= 14:
     print('Com {} anos, esse atleta pertence a categoria: INFANTIL'.format(idade))
 elif idade <= 19:
     print('Com {} anos, esse atleta pertence a categoria: JÚNIOR'.format(idade))
-elif idade == 20:
+elif idade <= 25:
     print('Com {} anos, esse atleta pertence a categoria: SÊNIOR'.format(idade))
-elif idade > 20:
+elif idade > 25:
     print('Com {} anos, esse atleta pertence a categoria: MASTER'.format(idade))
