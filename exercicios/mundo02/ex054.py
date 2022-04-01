@@ -7,7 +7,7 @@ anoAtual = sysdata.year
 maiorIdade = 0
 menorIdade = 0
 for c in range(1, 8):
-    idade = int(input('Nascimento da pessoas {}: '.format(c)))
+    idade = int(input('Nascimento da pessoa {}: '.format(c)))
     tot = anoAtual - idade
     if tot >= 21:
         maiorIdade = maiorIdade + 1
