@@ -7,7 +7,7 @@ from random import choice
 lista = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 cont = 0
 res = 'S'
-while res != 'S':
+while res != 'N':
     num = int(input('Digite um número inteiro entre 0 e 10. '))
     random = choice(lista)
     cont = cont + 1
