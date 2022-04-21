@@ -7,7 +7,7 @@ while res == 'S':
     sexo = str(input('''
     F - Feminino
     M - Masculino
-    ''')).upper()
+    ''')).strip().upper()[0]
     if sexo != 'F' and sexo != 'M':
         print('Por favor, digite uma opção válida.')
     else:
