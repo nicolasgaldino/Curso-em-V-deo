@@ -2,7 +2,7 @@
 pelo teclado. O programa só vai parar quando o usuário
 digitar o valor 999, que é a condição de parada. No
 final, mostre quantos números foram digitados e qual
-foi a soma entre ele. (Desconsiderando o flag).'''
+foi a soma entre eles. (Desconsiderando o flag).'''
 val = 0 # val = cont = som = 0
 cont = 0
 soma = 0
